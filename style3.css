@@ -1,0 +1,89 @@
+@charset 'UTF-8';
+/*初期化*/
+@import url("https://fonts.googleapis.com/css?family=Raleway:500");
+
+@font-face {
+    font-family: Pigmo-01;
+    src: local('Pigmo-01.otf'),
+
+        local('//Library/Fonts/Pigmo-01.otf'),
+        url('Pigmo-01.otf'),
+        url(../Pigmo-01.otf),
+        url('../Pigmo-01.otf'),
+        url(Pigmo-01.otf),
+        local( //Library/Fonts/Pigmo-01.otf);
+}
+@font-face { 
+font-family: PopRumCute; 
+src:local('PopRumCute.otf'),
+
+local('//Library/Fonts/PopRumCute.otf'),
+url('PopRumCute.otf'), 
+url(../PopRumCute.otf),
+url('../PopRumCute.otf'),
+url(PopRumCute.otf),
+local(//Library/Fonts/PopRumCute.otf);
+} 
+
+* {
+    font-size: .95em;
+
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-position: outside;
+    list-style-type: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: black;
+
+    overflow: auto;
+    margin: 0;
+    place-items: center;
+
+}
+p{
+    font-family: PopRumCute;
+ color:white;
+}
+input{
+        height: 30px;
+       weight:140px; 
+}
+
+#input{
+    text-align: center;
+    margin:auto;
+background-color: pink;
+    height:300px;
+    width: 40%;
+
+
+}
+
+#wrapper {
+    width: 100%;
+    right: 0px;
+    box-sizing: border-box;
+    background-color: skyblue;
+    height: 4000px;
+    overflow-x: auto;
+
+    background-image: url(../img/bgmovvvv.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+}

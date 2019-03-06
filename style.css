@@ -1,0 +1,470 @@
+@charset 'UTF-8';
+/*初期化*/
+@import url("https://fonts.googleapis.com/css?family=Raleway:500");
+@font-face { 
+font-family: Pigmo-01; 
+src:local('Pigmo-01.otf'),
+
+local('//Library/Fonts/Pigmo-01.otf'),
+url('Pigmo-01.otf'), 
+url(../Pigmo-01.otf),
+url('../Pigmo-01.otf'),
+url(Pigmo-01.otf),
+local(//Library/Fonts/Pigmo-01.otf);
+} 
+
+@font-face { 
+font-family: PopRumCute; 
+src:local('PopRumCute.otf'),
+
+local('//Library/Fonts/PopRumCute.otf'),
+url('PopRumCute.otf'), 
+url(../PopRumCute.otf),
+url('../PopRumCute.otf'),
+url(PopRumCute.otf),
+local(//Library/Fonts/PopRumCute.otf);
+} 
+
+
+
+* {
+    font-size: .95em;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+li {
+    list-style-position: outside;
+    list-style-type: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+a:visited
+{
+	color: pink;
+}
+body {
+  background: black;
+  display: grid;
+  margin: 0;
+  place-items: center;
+  overflow:auto;
+
+}
+/*左右要素*/
+#navi,
+#contain {
+
+    position: absolute;
+}
+
+
+
+#navi {
+    height: 100vh;
+    width: 10%;
+    left: 0px;
+    box-sizing: border-box;
+
+    position: fixed;
+        background: rgba(0, 0, 0, 0.5);
+ flex-direction:column; 
+ background-color: white;
+}
+
+#contain {
+    width: 90%;
+    right: 0px;
+    box-sizing: border-box;
+    background-color: skyblue;
+    height: 4000px;
+    overflow-x: auto;
+
+    background-image: url(../img/bgmovvvv.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+/*navi部分*/
+
+
+
+
+.ducks img{
+
+ width: 100%;
+height:auto;
+box-sizing: content-box;
+margin-bottom: 50px;
+}
+
+.innavi {
+
+
+    transition: background 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
+    display: block;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:0 50 0 50;
+    margin-top:20px;
+    margin-bottom: 20px;
+
+}
+
+.innavi:hover {
+
+  background: rgb(77, 166, 255);
+
+    color:pink;
+
+}
+
+a:hover{
+	    color:pink;
+
+}
+
+.innavi2 {
+
+
+
+    display: block;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top:80px;
+    margin-bottom: 10px;
+
+}
+
+
+}
+.innavi img{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/*height:auto;
+	width: auto;*/
+
+}
+
+
+
+.innavi p{
+
+
+
+  font-family: Pigmo-01;
+  font-size: 1.5em;
+font-weight: bold;
+}
+
+.art {
+    padding:0 40 0 40;
+    margin-left: 3px;
+
+}
+
+a {
+    display: block;
+
+}
+
+
+
+
+/*contain部分*/
+
+button {
+
+  -webkit-appearance: none;
+  background: -webkit-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+  background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+  background-size: 500%;
+  border: none;
+  border-radius: 5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  color: #fff;
+  cursor: pointer;
+  font: 1.5em Raleway, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 5rem;
+  letter-spacing: 0.05em;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20rem;
+  margin-top:30px;
+  margin-bottom: 40px;
+}
+
+button:hover {
+  animation-name: gradient;
+  -webkit-animation-name: gradient;
+  animation-duration: 2s;
+  -webkit-animation-duration: s;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+#white {
+    height: 100vh;
+    z-index: 2;
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+
+.brand img{
+	height: 80%;
+	width: 60%;
+
+}
+
+#event{
+	height: auto;
+	text-align: center;
+	margin:0;
+	background: rgba(0, 0, 0, 0.6);
+z-index: 3;
+}
+
+#event h1{
+	font-family: Pigmo-01, sans-serif; 
+	font-size: 5em;
+	color:white;
+}
+#event p{
+  font-family: PopRumCute, sans-serif;
+letter-spacing:2px;
+  font-size: 1.9em;
+  color:white;
+  margin-top: 4px;
+}
+#inevent{
+  width:80%;
+  text-align: center;
+
+
+}
+#map {
+
+    text-align: center;
+    z-index: 2;
+}
+
+
+
+
+#event p img{
+
+height:64vh;
+width: 50vw;
+
+
+ }
+
+
+
+/*class 領域*/
+.tate{
+	writing-mode: vertical-rl;
+	color: white;
+}
+
+/*ギャラリー*/
+#gya {
+    display: flex;
+    text-align: center;
+    margin: 0;
+    justify-content: center;
+    padding: 10% 0 50px 0;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#gya p{
+font-family: PopRumCute,sans-serif;
+color: white;
+font-size: 1.9em;
+letter-spacing:2px;
+  margin-top: 4px;
+
+}
+.poster-main {
+  position: relative;
+
+}
+
+.poster-main a, .poster-main img { display: block; width: 100%; height: 100%;}
+.poster-main img{ }
+.poster-main .poster-list {
+  width: 1000px;
+  height: 500px;
+}
+
+.poster-main .poster-list .poster-item {
+  width: 200px;
+  height: 500px;
+  position: absolute;
+  left: 0;
+  top: 0;
+ 
+}
+
+.poster-main .poster-btn {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  filter: opacity(.5) brightness(1);
+}
+.poster-main .poster-btn:hover{ filter: opacity(1) brightness(2); }
+
+.poster-main .poster-prev-btn {
+  left: 0;
+  background: url("../img/left.png") no-repeat center center;
+}
+
+.poster-main .poster-next-btn {
+  right: 0;
+  background: url("../img/right.png") no-repeat center center;
+}
+.poster-item-title{
+  font-size: 18px;
+  text-align: center;
+  line-height: 48px;
+  display: block;
+}
+
+ /*ふわっと表示*/
+.sa {
+  opacity: 0;
+  transition: all 1500ms 0s ease;
+  padding-right: 50px;
+
+}
+
+
+.sec p{
+	color:pink;
+}
+ .sa p{
+	font-size: 3.3em;
+font-family:Pigmo-01,sans-serif;
+font-family:Pigmo-01;
+margin-left: 30px;
+font-weight: bold;
+}
+.sa.show {
+  opacity: 1;
+  transform: none;
+}
+.sa--down {
+  transform: translate(0, -100px);
+}
+
+/*------sys-------*/
+#sys
+{
+    position: relative;
+
+  height:150vh;
+}
+
+.sys1,
+.sys2,
+.sys3,
+.sys4,
+.p01,
+.p02,
+.p03
+{
+  position: absolute;
+
+  font-size: 0.8em;
+  color:white;
+font-family:Pigmo-01;
+  }
+
+
+
+.sys1{
+  top:50px;
+  left:60px;
+}
+
+.p01{
+  top:60px;
+  left:550px;
+
+}
+
+.sys2{
+  top:350px;
+  right:80px;
+}
+
+.p02{
+  top:700px;
+  right:80px;
+}
+
+
+.sys3{
+top:600px;
+left: 100px;
+
+}
+
+.p03{
+  top:1000px;
+  left:100px;
+}
+
+.sys4{
+     top:900px;
+     right:80px;
+}
+
+#cmd{
+  position: absolute;
+  top:1200px;
+  height:900px;
+  background-color: pink;
+}
+
+
